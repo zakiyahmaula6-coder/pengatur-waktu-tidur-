@@ -24,7 +24,6 @@ Aplikasi web sederhana untuk mengatur jadwal tidur dan aktivitas harian agar pol
 </html>
 function simpanJadwal() {
   let waktuTidur = document.getElementById("sleepTime").value;
-
   if (waktuTidur === "") {
     alert("Silakan isi waktu tidur terlebih dahulu!");
   } else {
