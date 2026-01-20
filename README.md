@@ -19,14 +19,14 @@ Aplikasi web sederhana untuk mengatur jadwal tidur dan aktivitas harian agar pol
     <p id="jam 8 malam">Belum diatur</p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script>simpanJadwal()
 </body>
 </html>
 function simpanJadwal() {
   let waktuTidur = document.getElementById("sleepTime").value;
 
   if (waktuTidur === "") {
-    alert("jam 8 malam");
+    alert("Silakan isi waktu tidur terlebih dahulu!");
   } else {
     document.getElementById("hasil").innerText =
       "Waktu tidur kamu: " + waktuTidur;
