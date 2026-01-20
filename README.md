@@ -16,7 +16,7 @@ Aplikasi web sederhana untuk mengatur jadwal tidur dan aktivitas harian agar pol
     <button onclick="simpanJadwal()">Simpan Jadwal Tidur</button>
 
     <h3>Jadwal Tidur Kamu:</h3>
-    <p id="jam 8 malam">Belum diatur</p>
+    <p id="Silakan isi waktu tidur terlebih dahulu!">Belum diatur</p>
   </div>
 
   <script src="script.js"></script>simpanJadwal()
