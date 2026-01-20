@@ -1,2 +1,40 @@
 # pengatur-waktu-tidur-
 Aplikasi web sederhana untuk mengatur jadwal tidur dan aktivitas harian agar pola istirahat lebih teratur.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pengatur Waktu Tidur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pengatur Waktu Tidur</h1>
+    <p>Atur jadwal tidur agar lebih teratur</p>
+
+    <input type="time" id="sleepTime">
+    <button onclick="simpanJadwal()">Simpan Jadwal Tidur</button>
+
+    <h3>Jadwal Tidur Kamu:</h3>
+    <p id="hasil">Belum diatur</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+function simpanJadwal() {
+  let waktuTidur = document.getElementById("sleepTime").value;
+
+  if (waktuTidur === "") {
+    alert("Silakan pilih waktu tidur!");
+  } else {
+    document.getElementById("hasil").innerText =
+      "Waktu tidur kamu: " + waktuTidur;
+  }
+}
+
+pengatur-waktu-tidur/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
